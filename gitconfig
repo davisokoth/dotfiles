@@ -1,0 +1,47 @@
+[user]
+	email = davisokoth@gmail.com
+	name = Davis Okoth
+[alias]
+	pf = push --force-with-lease
+	pu = push -u
+	del = branch -d
+	lg = log --graph
+        st = "status -s -b"
+        c = "commit"
+	rai = "rebase --autosquash -i"
+        undo = "reset @^"
+
+        # --all
+        # --verbose
+        br = "branch -a -v"
+
+        co = "checkout"
+        cb = "checkout -b"
+
+        # Short hash, relative date and message.
+        logd = "log --pretty='%C(yellow)%h %C(cyan)%ar %Creset%s'"
+
+        # --graph:
+        #     Draw a text-based graphical representation of the commit history on
+        #     the left hand side of the output.
+        # --decorate:
+        #     Print out the ref names of any commits that are shown. Defaults to
+        #     short optionm such that the name prefixes refs/heads/, refs/tags/ and
+        #     refs/remotes/ will not be printed.
+        ls = "log --graph --decorate --oneline"
+
+[init]
+	defaultBranch = main
+[fetch]
+  prune = true
+  pruneTags = true
+  writeCommitGraph = true
+[rerere]
+  autoUpdate = true
+  enabled = true
+[pull]
+  rebase = true
+[core]
+    editor = "nano"
+    excludesfile = "~/.gitignore"
+
