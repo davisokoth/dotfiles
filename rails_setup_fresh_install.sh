@@ -19,6 +19,7 @@ nvm ls-remote
 node -v
 npm install --global yarn
 npm install -g npm@10.9.0
+sudo apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ~/.rbenv/bin/rbenv init
 source ~/.bashrc
