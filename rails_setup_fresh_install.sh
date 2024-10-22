@@ -13,6 +13,7 @@ sudo apt install curl
 source ~/.bashrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
+source ~/.bashrc
 nvm install v20.18.0
 sudo apt-get install openssl
 sudo sudo apt install libpq-dev
@@ -25,17 +26,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ~/.rbenv/bin/rbenv init
 source ~/.bashrc
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-source ~/.bashrc
-sudo apt update
-sudo apt install build-essential
-sudo apt-get install libz-dev
-source ~/.bashrc
-sudo apt-get install libffi-dev
+sudo apt install build-essential libz-dev libffi-dev checkinstall zlib1g-dev libtool libyaml-dev
 sudo apt install postgresql
-sudo apt-get install openssl
-sudo apt install libssl-dev libz-dev build-essential checkinstall zlib1g-dev
-sudo apt-get install libtool
-sudo apt install libyaml-dev
 rbenv install 3.3.3
 sudo apt install direnv
 source ~/.bashrc
