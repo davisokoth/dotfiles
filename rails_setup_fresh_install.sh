@@ -36,3 +36,11 @@ cd <path/to/project/folder>
 gem install overmind
 sudo -u postgres createuser -s $USER
 bin/setup
+
+## Installing Android Studio
+sudo apt update
+sudo apt install terminator libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
+## To begin installing Toolbox, go ahead and visit the official site and download the archived installer. 
+cd ~/Downloads
+wget -c https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.5.1.34629.tar.gz
+sudo tar -xzf jetbrains-toolbox-2.5.1.34629.tar.gz -C /opt
